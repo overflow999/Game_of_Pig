@@ -1,4 +1,11 @@
+html{
+    background-image: url(images/game.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 body {
+    
     font-family: Arial;
     color: #333;
     padding: 50px;
