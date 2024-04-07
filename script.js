@@ -52,9 +52,9 @@
 
             setTimeout(setupTurn,2000)
         } else if(gameData.roll1 ===1 || gameData.roll2 === 1){
-            gameData.score[gameData.index]= gameData.score[gameData.index] - gameData.turnsum
+            gameData.score[gameData.index]= gameData.score[gameData.index] - gameData.rollsum
             gameData.index ? (gameData.index=0 ):( gameData.index = 1)
-            game.innerHTML=`<p>You rolled a 1,switching to ${gameData.players[gameData.index]}</p>`
+            game.innerHTML=`<p>You rolled a 1 (${gameData.rollsum} will be substracted from your score),switching to ${gameData.players[gameData.index]}</p>`
             setTimeout(setupTurn,2000)
         }
 
